@@ -66,7 +66,7 @@ export const JWT_CONTROLLER_ON: boolean = true;
           port: configService.get('mongo.port'),
           database: configService.get('mongo.database'),
           user: configService.get('mongo.user'),
-          pass: configService.get('mongo.password'),
+          pass: configService.get('mongo.pass'),
         };
       },
       inject: [ConfigService],
