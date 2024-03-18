@@ -96,5 +96,6 @@ async function bootstrap() {
   const host: string = configService.get("app.host");
   if (swagger) console.log(`[bootstrap] Swagger started in url '${htppsEnable ? 'https' : 'http'}://${host}:${port}/${swaggerRoute}'`);
   console.log(`[bootstrap] App started in '${htppsEnable ? 'https' : 'http'}://${host}:${port}'`);
+  console.log(`[bootstrap] Environment loaded is: ${configService.get('app.production') ? 'PROD' : 'DEV'}`);
 }
 bootstrap();
